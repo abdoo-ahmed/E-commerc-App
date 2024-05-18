@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.products .col-md-3:hover
+{
+    /* box-shadow: var(--shadow);
+    border: solid 1px var(--main-color); */
+    transition: all 0.7s;
+    border-radius: 6px;
+    box-shadow:0px 0px 6px var(--main-color);
+    
+}
+.products .col-md-6:hover
+{
+    transition: all 0.8s;
+    box-shadow:0px 0px 4px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+.icon_nav {
+  color: #4FA74F;
+  font-size: 32px;
+}
+.icon_Cart{
+    color: #575757;
+    font-size: 27px;
+   
+}
+.icon_Cart:hover{
+    color: #323232;
+    font-size: 27px;
+    
+}
+.logo_nav{
+    margin: 0;
+    padding-top: 0;
+  font-size: 28px;
+  font-family :system-ui ,-apple-system ,"Segoe UI" ,Roboto ,"Helvetica Neue" ,"Noto Sans" ,"Liberation Sans" ,Arial ,sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol" ,"Noto Color Emoji" ;
+  font-weight: 500;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.before-btn{
+  color: #B7B8B9;
+  border-color: #B7B8B9;
+}
+.forgetLogin:hover{
+    color: #4FA74F;
+    cursor: pointer;
+
+
+}
+.forgetLogin{
+    
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.slider_center{
+    width: 99.9%;
+    /* width: max-content; */
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.imgError{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.Log_Reg{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: system-ui ,-apple-system ,"Segoe UI" ,Roboto ,"Helvetica Neue" ,"Noto Sans" ,"Liberation Sans" ,Arial ,sans-serif ,"Apple Color Emoji" ,"Segoe UI Emoji" , "Segoe UI Symbol","Noto Color Emoji";
+}
+.products .AddBtn{
+    transform: translateY(200%);
+    transition: 0.3s all;
+}
+.products .col-md-3:hover .AddBtn{
+    transform: translateY(0);
+}
+.cart{
+    background-color: #F8F9FA;
+    margin-top: 140px;
+    font-weight: 500;
+    font-family: system-ui ,-apple-system ,"Segoe UI" ,Roboto ,"Helvetica Neue" ,"Noto Sans" ,"Liberation Sans" ,Arial ,sans-serif ,"Apple Color Emoji" ,"Segoe UI Emoji" ,"Segoe UI Symbol" ,"Noto Color Emoji" ;
+}
+.wish_List{
+    background-color: #F8F9FA;
+    margin-top: 70px;
+    font-weight: 500;
+    font-family: system-ui ,-apple-system ,"Segoe UI" ,Roboto ,"Helvetica Neue" ,"Noto Sans" ,"Liberation Sans" ,Arial ,sans-serif ,"Apple Color Emoji" ,"Segoe UI Emoji" ,"Segoe UI Symbol" ,"Noto Color Emoji" ;
+    height: 150px;
+    padding: 40px;
+
+}
+.text-AllBrands{
+    color: #4FA74F;
+}
+.AllBrands{
+    font-size: 40px;
+    font-family: system-ui ,-apple-system ,"Segoe UI" ,Roboto ,"Helvetica Neue" ,"Noto Sans" ,"Liberation Sans" ,Arial ,sans-serif ,"Apple Color Emoji" ,"Segoe UI Emoji" ,"Segoe UI Symbol" ,"Noto Color Emoji";
+    font-weight: 500;
+}
+.inner_Pages{
+    margin-top: 120px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.empty_cart{
+    background-color: #F8F9FA;
+
+}
+.inner:hover {
+    transition: all 0.7s;
+    box-shadow:0px 0px 6px var(--main-color);
+    
+}
+.move_Brand{
+
+    margin-top: 100px;
+
+}
+.model_brand{
+    margin-top: 25px;
+}
