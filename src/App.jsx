@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, RouterProvider,  createHashRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Components/Layout/Layout'
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
@@ -19,7 +19,7 @@ import CheckOut from './Components/CheckOut/CheckOut';
 import AllOrders from './Components/AllOrders/AllOrders';
 
 
-const x= createHashRouter([
+const x= createBrowserRouter([
   { path:"/" , element: <Layout/>, children: [
     {  path:"" , element: <Login/> },
     {  path:"login" , element:<Login/> },
@@ -56,7 +56,7 @@ export default function App() {
 
         <CartContextprovider>
 
-          <HashRouter router={x}/>
+          <RouterProvider router={x}/>
 
         </CartContextprovider>
 
