@@ -19,10 +19,6 @@ const ValidateScima = yup.object({
 })
 export default function Register() {
 
-  // function onSubmit(e){
-  //   e.preventDefault()
-  //   console.log("hello");
-  // }
   const inshialData ={
     name:"",
     email:"",
@@ -34,7 +30,7 @@ export default function Register() {
   const [isClick, setisClick] = useState(false);
   const Navigate = useNavigate()
   const onsubmit= async (values)=>{
-    ////   call Api
+
     setisClick(true)
 
     await axios.post(`https://ecommerce.routemisr.com/api/v1/auth/signup` , values) 
@@ -61,7 +57,7 @@ export default function Register() {
     //   const errors={}
 
     //   const nameReges= /^[A-Z][a-z]{3,20}$/
-    //   const phoneReges= /^01[0125][0-9]{8}$/
+    //   const phoneReges= /^(20)?01[0125][0-9]{8}$/
     //   if (nameReges.test( values.name ) === false){
     //     errors.name = "error Name"
     //   }
