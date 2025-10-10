@@ -16,10 +16,6 @@ const ValidateScima = yup.object({
 })
 export default function Login() {
 
-  // function onSubmit(e){
-  //   e.preventDefault()
-  //   console.log("hello");
-  // }
 
   const {setToken} = useContext(authContext)
 
@@ -61,17 +57,13 @@ export default function Login() {
     await axios.post(`https://ecommerce.routemisr.com/api/v1/auth/signin` , values) 
     .then(function (x){
       
-      
-      if (x.data.message =="success") {
+      if (x.data.message === "success") {
         console.log("token" , x.data.token);
         localStorage.setItem( "tkn", x.data.token  )
         setToken(x.data.token)
         setTimeout( ()=>{
           Navigate("/home")
-
           setisClick(false)
-          
-
         } , 500 )
 
       }
@@ -79,7 +71,6 @@ export default function Login() {
     })
     .catch(function (x){
       console.log("error" , x);
-      
     })
 
     setisClick(false)
@@ -90,37 +81,7 @@ export default function Login() {
 
     initialValues:inshialData,
     onSubmit:onsubmit,
-    // validate: function(values){
-    //   const errors={}
-
-    //   const nameReges= /^[A-Z][a-z]{3,20}$/
-    //   const phoneReges= /^01[0125][0-9]{8}$/
-    //   if (nameReges.test( values.name ) === false){
-    //     errors.name = "error Name"
-    //   }
-    //   if (values.Email.includes("@") !== true ||  values.Email.includes(".") !== true ){
-    //     errors.Email = "error Email"
-    //   }
-
-    //   if ( values.Password.length < 6 ||values.Password.length > 12 ){
-    //     errors.Password = "error Password"
-    //   }
-
-    //   if ( values.repassword !== values.Password){
-    //     errors.repassword = "error repassword"
-    //   }
-
-    //   if (phoneReges.test( values.Phone ) === false){
-    //     errors.Phone = "error Phone"
-    //   }
-
-
-    //   return errors;
-    // }
-
-
     validationSchema :ValidateScima
-
 
    })
    
@@ -171,10 +132,6 @@ export default function Login() {
 
 
     </form>
-
-
-
-
 
   </div>
   
