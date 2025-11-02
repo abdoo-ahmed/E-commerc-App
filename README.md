@@ -32,5 +32,4 @@ This project demonstrates real-world frontend development practices — includin
 
 ---
 
-## 📁 Project Structure
 
