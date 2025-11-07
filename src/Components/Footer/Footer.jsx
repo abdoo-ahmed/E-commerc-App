@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
-  return <>
-  
-  <div className="bg-info"> footer </div>
-  
-  </>
+  return (
+    <>
+      <div className="bg-info"> footer </div>
+    </>
+  );
 }
